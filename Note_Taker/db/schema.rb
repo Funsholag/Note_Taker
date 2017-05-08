@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 20170508205256) do
   create_table "notes", force: :cascade do |t|
     t.string   "content"
     t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "professors", force: :cascade do |t|
