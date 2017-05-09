@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
 
   resources :notes
+  resources :todolists
   resources :classrooms
   resources :professors
   resources :profiles

@@ -11,6 +11,20 @@
 
   <tbody>
     <% @todolists.each do |todolist| %>
+    @todolist = Hacer::Todolist.new("todos") %>
+    todo = todo_list.create("Mow the lawn")
+    todo_list.list # => [Todo(1,Mow the lawn)]
+
+    todo = todo_list.create("Take out the trash")
+    todo_list.list # => [Todo(1,Mow the lawn), Todo(2,Take out the trash)]
+
+    todo.complete(1)
+    todo_list.list # => [Todo(2,Take out the trash)]
+
+    todo_list.list(:all) # => [Todo(1,Mow the lawn,completed), Todo(2,Take out the trash)]
+
+    todo_list.clean!
+    todo_list.list(:all) # => [Todo(2,Take out the trash)]
       <tr>
         <td><%= link_to 'Show', todolist %></td>
         <td><%= link_to 'Edit', edit_todolist_path(todolist) %></td>
