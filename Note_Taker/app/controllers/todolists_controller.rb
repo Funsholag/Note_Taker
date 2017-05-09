@@ -5,6 +5,7 @@ class TodolistsController < ApplicationController
   # GET /todolists.json
   def index
     @todolists = Todolist.all
+
   end
 
   # GET /todolists/1
@@ -14,7 +15,7 @@ class TodolistsController < ApplicationController
 
   # GET /todolists/new
   def new
-    @todolist = Hacer::Todolist.new("todos")
+    # @todolist = Hacer::Todolist.new("todos")
     @todolist = Todolist.new
 
   end
