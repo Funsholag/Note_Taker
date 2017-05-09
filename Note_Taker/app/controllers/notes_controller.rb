@@ -10,6 +10,7 @@ class NotesController < ApplicationController
   # GET /notes/1
   # GET /notes/1.json
   def show
+    @note = Note.find(params[:id])
   end
 
   # GET /notes/new
@@ -69,6 +70,7 @@ class NotesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def note_params
-      params.fetch(:note, {})
+      # params.fetch(:note, {})
+      params.require(:note).permit(:title, :content)
     end
 end
