@@ -15,7 +15,6 @@ class TodolistsController < ApplicationController
 
   # GET /todolists/new
   def new
-    # @todolist = Hacer::Todolist.new("todos")
     @todolist = Todolist.new
 
   end
@@ -27,7 +26,6 @@ class TodolistsController < ApplicationController
   # POST /todolists
   # POST /todolists.json
   def create
-    # @todolist = Todolist.new("Clean your room")
     @todolist = Todolist.new(todolist_params)
 
     respond_to do |format|
