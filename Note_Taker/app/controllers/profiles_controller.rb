@@ -10,6 +10,7 @@ class ProfilesController < ApplicationController
   # GET /profiles/1
   # GET /profiles/1.json
   def show
+     @profile = Profile.find(user_id:session[:user_id])
   end
 
   # GET /profiles/new
