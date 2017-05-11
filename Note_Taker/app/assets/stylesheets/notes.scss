@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 textarea {
-  width: 100%;
+  width: 100%
 }
 
 #md-editor {
@@ -11,4 +11,15 @@ textarea {
 
 .btn-group {
   display: block;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+.noteItems {
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  padding: 5px;
 }

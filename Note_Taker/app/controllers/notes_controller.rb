@@ -20,7 +20,7 @@ class NotesController < ApplicationController
     puts params[:query]
     @query = "%#{params[:query]}%"
     @search = Note.where("content LIKE ? or title LIKE ?", @query, @query)
-
+    
     render :index
   end
 
