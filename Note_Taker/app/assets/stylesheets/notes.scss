@@ -15,8 +15,8 @@ textarea {
 #todolistForm {
   display: inline-block;
   display: none;
-  position: fixed;
-  bottom: 20px;
+  position: static;
+  top: 0px;
 }
 
 #untoggle {
