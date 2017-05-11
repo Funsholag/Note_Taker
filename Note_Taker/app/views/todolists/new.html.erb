@@ -1,4 +1,66 @@
 <h1>New Todolist</h1>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="todolist not-done">
+        <h1>To Do List</h1>
+        <input type="text" class="form-control add-todo" placeholder="Add Task">
+        <button id="checkAll" class="btn btn-success">Mark all as done</button>
+        <br>
+        <hr>
+
+        <ul id="sortable" class="list-unstyled">
+          <li>
+
+          </li>
+
+        </ul>
+        <div class="todo-footer">
+          <strong><span class="count-todos"></span></strong> Items Left
+        </div>
+      </div>
+    </div>
+    <div class="vertical"></div>
+    <div class="col-md-6">
+      <div class="todolist">
+        <h1>Done</h1>
+        <ul id="done-items" class="list-unstyled">
+          <li>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+
+  <tbody>
+    <% @todolists.each do |todolist| %>
+    <tr>
+      <td><%= link_to 'New', todolist %></td>
+      <td><%= link_to 'Edit', edit_todolist_path(todolist) %></td>
+      <td><%= link_to 'Destroy', todolist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
 
 <%= render 'form', todolist: @todolist %>
 

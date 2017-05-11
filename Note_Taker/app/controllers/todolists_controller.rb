@@ -11,6 +11,7 @@ class TodolistsController < ApplicationController
   # GET /todolists/1
   # GET /todolists/1.json
   def show
+    @todolist = Todolist.find(params[:id])
   end
 
   # GET /todolists/new
@@ -32,9 +33,11 @@ class TodolistsController < ApplicationController
       if @todolist.save
         format.html { redirect_to @todolist, notice: 'Todolist was successfully created.' }
         format.json { render :show, status: :created, location: @todolist }
+        redirect_to :back
       else
         format.html { render :new }
         format.json { render json: @todolist.errors, status: :unprocessable_entity }
+        redirect_to new_todolist
       end
     end
   end
