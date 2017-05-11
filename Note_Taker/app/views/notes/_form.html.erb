@@ -70,3 +70,23 @@
   <br>
 
 </div>
+<script>
+//<![CDATA[
+var toggleList = document.getElementById('listToggle');
+var untoggle = document.getElementById('untoggle');
+var todolistForm = document.getElementById('todolistForm');
+var noteForm = document.getElementById('noteForm');
+toggleList.addEventListener('click', function() {
+  todolistForm.style.display = 'block';
+  toggleList.style.display = 'none';
+  untoggle.style.display = 'inline';
+  noteForm.style.display = 'none';
+});//]]>
+
+untoggle.addEventListener('click', function() {
+  todolistForm.style.display = 'none';
+  toggleList.style.display = 'inline';
+  untoggle.style.display = 'none';
+  noteForm.style.display = 'block';
+})
+</script>
