@@ -50,7 +50,7 @@
   <tbody>
     <% @todolists.each do |todolist| %>
     <tr>
-      <td><%= link_to 'New', todolist %></td>
+      <td><%= link_to 'New', new_todolist_path %></td>
       <td><%= link_to 'Edit', edit_todolist_path(todolist) %></td>
       <td><%= link_to 'Destroy', todolist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
