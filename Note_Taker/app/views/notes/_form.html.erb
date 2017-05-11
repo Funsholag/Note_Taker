@@ -1,4 +1,5 @@
-<%= form_for(note) do |f| %>
+<div id='noteForm'>
+  <%= form_for(note) do |f| %>
   <% if note.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(note.errors.count, "error") %> prohibited this note from being saved:</h2>
@@ -20,3 +21,52 @@
     <%= f.submit %>
   </div>
 <% end %>
+</div>
+
+<div id="todolistForm">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <p id="notice"><%= notice %></p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="todolist not-done">
+          <h1>To Do List</h1>
+          <input type="text" class="form-control add-todo" placeholder="Add Task">
+          <button id="checkAll" class="btn btn-success">Mark all as done</button>
+          <br>
+          <hr>
+
+          <ul id="sortable" class="list-unstyled">
+            <li>
+
+            </li>
+
+          </ul>
+          <div class="todo-footer">
+            <strong><span class="count-todos"></span></strong> Items Left
+          </div>
+        </div>
+      </div>
+      <div class="vertical"></div>
+      <div class="col-md-6">
+        <div class="todolist">
+          <h1>Done</h1>
+          <ul id="done-items" class="list-unstyled">
+            <li>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br>
+
+</div>
