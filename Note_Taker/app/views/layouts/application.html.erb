@@ -19,10 +19,7 @@
   <body>
     <header>
       <nav id="nav" class="startnav">
-        <div class="home">
-          <span id="homeLink">
-            <%= link_to "Home", root_path, class: "navlink" %>
-          </span>
+        <%= link_to "Home", root_path, class: "navlink" %>
           <span id="aboutLink">
             <%= link_to "About/Contact Us", root_path, class: "navlink" %>
           </span>
@@ -47,7 +44,6 @@
 
           <% end %>
 
-        </div>
       </nav>
     </header>
     <%= yield %>
