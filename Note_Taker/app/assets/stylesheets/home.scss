@@ -34,18 +34,39 @@ body{
 #nav{
   background-color: black;
   opacity: .65;
-}
-.navlink{
-  color: red;
+  text-decoration: none;
+  font-family: 'BioRhyme', serif;
+  line-height: 45px;
 }
 #homeLink{
   color: red;
   text-decoration: none;
+  margin-left: 10px;
+}
+#aboutLink{
+  margin-left: 15px;
+}
+#signLink{
+  color: white;
+  margin-left: 15px;
+}
+#editLink{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#loginLink{
+  margin-left: 15px;
+  margin-right: 15px;
 }
 #signOutLink{
   color: black;
   text-decoration: none;
   color: #010000;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+#notesLink{
+  margin-left: 15px;
 }
 video {
   position: fixed;
@@ -81,13 +102,27 @@ footer{
 }
 .social{
   display: inline;
-  text-decoration: none;
+  // text-decoration: none;
 }
+
 #media{
   width: 25px;
   margin-right: 15px;
 }
+
+@media (min-width: 100px) {
+
+}
+
+@media (min-width: 200px) {
+
+}
+
 @media (min-width: 300px) {
+
+}
+
+@media (max-width: 500px) {
 
 }
 

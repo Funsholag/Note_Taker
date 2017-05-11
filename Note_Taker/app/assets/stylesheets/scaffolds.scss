@@ -23,13 +23,16 @@ pre {
 a {
   color: white;
 
+
   &:visited {
     color: white;
+
   }
 
   &:hover {
     color: #fff;
-    background-color: #000;
+    text-decoration: none;
+
   }
 }
 

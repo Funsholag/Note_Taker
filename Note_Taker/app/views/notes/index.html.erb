@@ -1,7 +1,11 @@
 <p id="notice"><%= notice %></p>
 
+<body style="background-color: #CECAC9<%= @colour %>">
 
-<h1>Notes</h1>
+
+<h1 class= "notesTitle">
+  Notes
+</h1>
 <% if user_signed_in? %>
 
 <% @notes.each do |note| %>
@@ -17,7 +21,7 @@
 <br>
 
 <%= link_to 'New Note', new_note_path %>
-<br><br><br>
+<br>
 
 <%= form_tag("/notes/search", method: "post") do %>
 <%= label_tag(:query, "Search:") %>
@@ -35,6 +39,8 @@
   <%= distance_of_time_in_words(note.updated_at, Time.now)%><br>
   <%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %>
 </div>
+
+</body>
 <% end %>
 
 <% end %>
