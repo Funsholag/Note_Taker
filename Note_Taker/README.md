@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an app intended for students.
 
-Things you may want to cover:
+We designed a note taking application and a to do list application.
++User Log In/Sign Up/Sign Out
++Edit account(change Username, Email, and Password)
++Search function
++To do list
++Word Documents
++Mark down Editor
++Preview
 
-* Ruby version
+HTML/CSS
+Javascript
+Ruby on Rails
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Used the following gems:
+devise
+paperclip
+redcarpet
+md_simple_editor
+font-awesome-rails

@@ -20,8 +20,9 @@
 
 <br>
 
-<%= link_to 'New Note', new_note_path %>
-<br>
+<button><%= link_to 'New Note', new_note_path %></button>
+
+<br><br>
 
 <%= form_tag("/notes/search", method: "post") do %>
 <%= label_tag(:query, "Search:") %>

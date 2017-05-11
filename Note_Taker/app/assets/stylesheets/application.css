@@ -15,9 +15,7 @@
  */
  *= require font-awesome
  *= require md_simple_editor
-nav{
-  text-decoration: none;
-}
+
 
  @media (min-width: 100px) {
 
