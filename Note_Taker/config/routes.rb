@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :todolists
-  resources :todos
   get "/" => "home#index"
   root :to => "home#index"
   post "/notes/search" => "notes#search"
