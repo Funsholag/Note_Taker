@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :lists
   resources :todolists
+  resources :todos
   get "/" => "home#index"
   root :to => "home#index"
   post "/search" => "notes#search"

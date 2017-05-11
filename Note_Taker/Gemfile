@@ -56,3 +56,4 @@ gem "paperclip", "~> 4.2"
 gem 'redcarpet'
 gem 'md_simple_editor'
 gem "font-awesome-rails"
+gem 'slim-rails'

@@ -1,93 +1,107 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
 // You can use CoffeeScript in this file: http://coffeescript.org/
-// $(document).ready(function () {
-//   $('button').click(function () {
-//     $('#todo').append("<ul>" + $("input[name=task]").val() + " <a href='#' class='close' aria-hidden='true'>&times;</a></ul>");
-//   });
-//   $("body").on('click', '#todo a', function () {
-//     $(this).closest("ul").remove();
-//   });
-// });
-$("#sortable").sortable();
-$("#sortable").disableSelection();
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('loaded');
 
-countTodos();
+  var checkedAll = document.getElementById('checkAll')
 
-// all done btn
-$("#checkAll").click(function(){
-  AllDone();
-});
+  // checkedAll.addEventListener('click', function(e) {
+  //   e.preventDefault()
+  //   console.log('checked');
+  // })
 
-//create todo
-$('.add-todo').on('keypress',function (e) {
-  e.preventDefault
-  if (e.which == 13) {
-    if($(this).val() !== ''){
-      var todo = $(this).val();
-      createTodo(todo);
+  $("#checkAll").click(function(){
+    // console.log('checked');
+    AllDone();
+  });
+})
+
+document.addEventListener('DOMContentLoaded', function(){
+  console.log('bitch');
+
+  $('.add-todo').on('keypress', function(e) {
+    // e.preventDefault
+    if (e.which === 13) {
+      if($(this).val() !== ''){
+        var todo = $(this).val();
+        createTodo(todo);
+        countTodos();
+      }
+      else{
+
+      }
+    }
+    console.log("longstyle");
+  });
+
+  $('.todolist').on('change','#sortable li input[type="checkbox"]',function(){
+    if($(this).prop('checked')){
+      var doneItem = $(this).parent().parent().find('label').text();
+      $(this).parent().parent().parent().addClass('remove');
+      done(doneItem);
       countTodos();
     }
-    else{
-      // some validation
-    }
-  }
-});
-// mark task as done
-$('.todolist').on('change','#sortable li input[type="checkbox"]',function(){
-  if($(this).prop('checked')){
-    var doneItem = $(this).parent().parent().find('label').text();
-    $(this).parent().parent().parent().addClass('remove');
-    done(doneItem);
-    countTodos();
-  }
-});
+    console.log("operate");
+  });
+})
 
-//delete done task from "already done"
-$('.todolist').on('click','.remove-item',function(){
-  removeItem(this);
-});
+document.addEventListener('DOMContentLoaded', function(){
+  $('.todolist').on('click','.remove-item',function(){
+    removeItem(this);
+  });
+  console.log("Lets GOOOO");
+})
 
-// count tasks
+
 function countTodos(){
   var count = $("#sortable li").length;
   $('.count-todos').html(count);
+  console.log("Yo");
 }
 
-//create task
+
+
 function createTodo(text){
   var markup = '<li class="ui-state-default"><div class="checkbox"><label><input type="checkbox" value="" />'+ text +'</label></div></li>';
   $('#sortable').append(markup);
   $('.add-todo').val('');
+  console.log("DSHS");
 }
 
-//mark task as done
+
 function done(doneItem){
   var done = doneItem;
   var markup = '<li>'+ done +'<button class="btn btn-default btn-xs pull-right  remove-item"><span class="glyphicon glyphicon-remove"></span></button></li>';
   $('#done-items').append(markup);
   $('.remove').remove();
+  console.log("MMHm");
 }
 
-//mark all tasks as done
+
+
+
+
 function AllDone(){
   var myArray = [];
+
+  console.log('all done clicked');
 
   $('#sortable li').each( function() {
     myArray.push($(this).text());
   });
 
-  // add to done
+
   for (i = 0; i < myArray.length; i++) {
     $('#done-items').append('<li>' + myArray[i] + '<button class="btn btn-default btn-xs pull-right  remove-item"><span class="glyphicon glyphicon-remove"></span></button></li>');
   }
 
-  // myArray
+
   $('#sortable li').remove();
   countTodos();
 }
 
-//remove done task from list
+
 function removeItem(element){
   $(element).parent().remove();
 }

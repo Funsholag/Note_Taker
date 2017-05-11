@@ -1,49 +1,49 @@
 // Place all the styles related to the todolists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-// form {
-//   display: inline-block;
-// }
-// .form-group {
-//   text-align: center;
-//   padding-bottom: 25px;
-// }
-// #todo {
-//   margin: 0 auto;
-//   width: 500px;
-// }
-//
-// a.close {
-//   float: right;
-// }
-body{
-  background-color:#EEEEEE;
-}
+@import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+$color: green;
+
 .todolist{
-  background-color:#FFF;
-  padding:20px 20px 10px 20px;
-  margin-top:30px;
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  margin-top: 10px;
 }
+
 .todolist h1{
-  margin:0;
-  padding-bottom:20px;
-  text-align:center;
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: white;
 }
+
 .form-control{
-  border-radius:0;
+  border-radius: 0;
 }
+
 li.ui-state-default{
-  background:#fff;
-  border:none;
-  border-bottom:1px solid #ddd;
+  background: white;
+  border: none;
+  border-bottom: 1px solid black;
 }
 
 li.ui-state-default:last-child{
-  border-bottom:none;
+  border-bottom: none;
+}
+
+.vertical{
+  width: 2px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
 }
 
 .todo-footer{
-  background-color:#F4FCE8;
+  background-color: aliceblue;
   margin:0 -20px -10px -20px;
   padding: 10px 20px;
 }
