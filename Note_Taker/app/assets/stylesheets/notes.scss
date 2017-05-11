@@ -32,3 +32,56 @@ table, td, th {
   margin-right: 10px;
   padding: 5px;
 }
+
+.todolist{
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+  margin-top: 10px;
+}
+
+.todolist h1{
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.form-control{
+  border-radius: 0;
+}
+
+li.ui-state-default{
+  background: white;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+li.ui-state-default:last-child{
+  border-bottom: none;
+}
+
+.vertical{
+  width: 2px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+.todo-footer{
+  background-color: aliceblue;
+  margin: 0px -20px -10px -20px;
+  padding: 10px 20px;
+}
+#done-items li{
+  padding:10px 0;
+  border-bottom:1px solid #ddd;
+  text-decoration:line-through;
+}
+#done-items li:last-child{
+  border-bottom:none;
+}
+#checkAll{
+  margin-top:10px;
+}
