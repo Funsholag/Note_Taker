@@ -1,6 +1,15 @@
 // Place all the styles related to the notes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body{
+  background-color: #CECAC9;
+}
+.notesTitle{
+  margin-left: 50%;
+  font-family: Above DEMO, serif;
+}
 textarea {
   width: 100%
 }
@@ -10,6 +19,8 @@ textarea {
 
 #noteForm {
   // width: 50%;
+
+
 }
 
 #todolistForm {
@@ -115,7 +126,19 @@ footer{
   width: 25px;
   margin-right: 15px;
 }
+@media (min-width: 100px) {
+
+}
+
+@media (min-width: 200px) {
+
+}
+
 @media (min-width: 300px) {
+
+}
+
+@media (max-width: 500px) {
 
 }
 
