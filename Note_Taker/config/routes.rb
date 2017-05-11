@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :todolists
   get "/" => "home#index"
   root :to => "home#index"
-
+  post "/search" => "notes#search"
   devise_for :users
 
 

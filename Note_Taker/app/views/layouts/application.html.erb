@@ -31,6 +31,9 @@
           <span id="signOutlink">
             <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => "navlink" %>
           </span>
+          <span id="notesLink">
+            <%= link_to "Notes", notes_path, :class => "navlink" %>
+          </span>
           <% else %>
           <span id="joinLink">
             <%= link_to "Join", new_user_registration_path, :class => "navlink" %>
@@ -38,6 +41,7 @@
           <span id="loginLink">
             <%= link_to "Log In", new_user_session_path, :class => "navlink" %>
           </span>
+
           <% end %>
 
         </div>

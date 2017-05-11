@@ -3,8 +3,25 @@ class NotesController < ApplicationController
 
   # GET /notes
   # GET /notes.json
+  attr_accessor :query
+
   def index
-    @notes = Note.all
+    @notes = Note.where(user_id: current_user.id)
+    puts @notes
+    @search = @notes.where("content LIKE ?", @query)
+    puts '@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@'
+    puts @search
+    puts '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+  end
+
+  def search
+    @notes = Note.where(user_id: current_user.id)
+    puts 'search acto=fdsjfdsj'
+    puts params[:query]
+    @query = "%#{params[:query]}%"
+    @search = Note.where("content LIKE ? or title LIKE ?", @query, @query)
+
+    render :index
   end
 
   # GET /notes/1
@@ -25,7 +42,8 @@ class NotesController < ApplicationController
   # POST /notes
   # POST /notes.json
   def create
-    @note = Note.new(note_params)
+    @user = current_user
+    @note = @user.notes.new(note_params)
 
     respond_to do |format|
       if @note.save

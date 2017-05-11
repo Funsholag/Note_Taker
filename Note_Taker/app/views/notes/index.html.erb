@@ -1,6 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Notes</h1>
+<% if user_signed_in? %>
+
+<%= form_tag("/search", method: "post") do %>
+  <%= label_tag(:query, "Search:") %>
+  <%= text_field_tag(:query) %>
+  <%= submit_tag("Submit") %>
+
+<% end %>
+
+<h2>Search result:</h2>
+<% @search.each do |s| %>
+<p><%= link_to s.title, edit_note_path(s) %></p>
+<% end %>
 
 <table>
   <thead>
@@ -12,7 +25,7 @@
   <tbody>
     <% @notes.each do |note| %>
       <tr>
-        <td><%= link_to 'Show', note %></td>
+        <td><%= link_to note.title, note %></td>
         <td><%= link_to 'Edit', edit_note_path(note) %></td>
         <td><%= link_to 'Destroy', note, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -24,7 +37,5 @@
 
 <%= link_to 'New Note', new_note_path %>
 <br>
-Notes:<br>
-<% @notes.each do |note| %>
-<%= link_to note.title, note %><br>
+
 <% end %>

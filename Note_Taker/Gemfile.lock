@@ -192,6 +192,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise
+  font-awesome-rails
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
@@ -199,6 +200,7 @@ DEPENDENCIES
   paperclip (~> 4.2)
   puma (~> 3.0)
   rails (~> 5.0.2)
+  redcarpet
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
