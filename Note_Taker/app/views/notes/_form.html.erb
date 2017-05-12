@@ -50,7 +50,7 @@
           </div>
         </div>
       </div>
-      <div class="vertical"></div>
+      <!-- <div class="vertical"></div> -->
       <div class="col-md-6">
         <div class="todolist">
           <h1>Done</h1>
@@ -75,11 +75,13 @@ var toggleList = document.getElementById('listToggle');
 var untoggle = document.getElementById('untoggle');
 var todolistForm = document.getElementById('todolistForm');
 var noteForm = document.getElementById('noteForm');
+var noteHeader = document.getElementById('noteHeader');
 toggleList.addEventListener('click', function() {
   todolistForm.style.display = 'block';
   toggleList.style.display = 'none';
   untoggle.style.display = 'inline';
   noteForm.style.display = 'none';
+  noteHeader.innerHTML = 'To Do List'
 });//]]>
 
 untoggle.addEventListener('click', function() {
@@ -87,5 +89,6 @@ untoggle.addEventListener('click', function() {
   toggleList.style.display = 'inline';
   untoggle.style.display = 'none';
   noteForm.style.display = 'block';
+  noteHeader.innerHTML = 'Note'
 })
 </script>

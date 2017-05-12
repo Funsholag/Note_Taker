@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#main {
+  padding: 0 40px;
+}
+
 .editNote{
   font-family: Above DEMO, serif;
   src: local("ABOVE -PERSONAL USE ONLY");
@@ -24,8 +28,6 @@ textarea {
 
 #noteForm {
   // width: 50%;
-
-
 }
 
 #todolistForm {
@@ -37,6 +39,10 @@ textarea {
 
 #untoggle {
   display: none;
+}
+
+#untoggle, #listToggle {
+  margin-bottom: 20px;
 }
 
 .btn-group {

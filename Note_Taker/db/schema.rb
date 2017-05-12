@@ -21,12 +21,6 @@ ActiveRecord::Schema.define(version: 20170511215239) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "lists", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "item"
-  end
-
   create_table "notes", force: :cascade do |t|
     t.string   "content"
     t.string   "title"
@@ -55,11 +49,6 @@ ActiveRecord::Schema.define(version: 20170511215239) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
-  end
-
-  create_table "todolists", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "todos", force: :cascade do |t|
