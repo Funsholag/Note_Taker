@@ -4,9 +4,10 @@
 document.addEventListener('DOMContentLoaded', function() {
   console.log('psh');
 
-  var vid = document.getElementById('homeVid')
-  var pauseButton = document.querySelector("#polina button")
-  
+  var vid = document.getElementById('343465699.mp4')
+  var pauseButton = document.querySelector("#pauseVid")
+  var playButton = document.querySelector("#playVid")
+  // var hidden = false;
   vid.addEventListener('click', function(e) {
     e.preventDefault()
     console.log('checked');
@@ -14,13 +15,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   pauseButton.addEventListener("click", function(){
     vid.classList.toggle("stopfade");
-    if (vid.paused){
-      vid.play();
-      // pauseButton.innerHTML = "Pause"
-    }
-    else{
-      vid.pause();
-      // pauseButton.innerHTML = "Play";
-    }
+    vid.pause();
   })
-});
+
+  playButton.addEventListener("click", function(){
+    vid.classList.toggle("stopfade");
+    vid.play();
+    })
+  })
