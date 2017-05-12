@@ -10,12 +10,20 @@
   <%=image_tag("1494560242_note.png", id:'book')%>
 </span>
 
-  <video poster="homeVid.mp4" id="homeVid" preload="auto" playsinline autoplay muted loop>
+  <!-- <video poster="homeVid.mp4" id="homeVid" preload="auto" playsinline autoplay muted loop>
     <source src="homeVid.mp4" type="video/mp4">
+  </video> -->
+  <video poster="343465699.mp4" id="343465699.mp4" preload="auto" playsinline autoplay muted loop>
+    <source src="343465699.mp4" type="video/mp4">
   </video>
-  <div id="polina">
-    <!-- <button onclick="pauseVid">Pause</button> -->
-    <button onclick="pauseVid" type="button"> <%=image_tag("1494585147_PauseDisabled.png", class:'Jaunst')%>
-    </button>
 
-  </div>
+
+<span id="polina">
+  <button onclick="pauseVid" id="pauseVid" type="button"> <%=image_tag("1494585147_PauseDisabled.png", class:'Jaunst')%>
+  </button>
+
+
+  <button onclick="playVid" id="playVid" type="button"> <%=image_tag("gtk_media_play_ltr.png", class:'Jaunst')%>
+  </button>
+
+</span>
