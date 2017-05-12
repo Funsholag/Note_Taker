@@ -1,8 +1,13 @@
-<h1>Editing Note</h1>
+<body style="background-color: #CECAC9<%= @colour %>">
+<h1 class= "editNote">
+  Editing Note
+</h1>
 <button type="button" name="button" id="listToggle">Toggle Todolist</button>
 <button type="button" name="button" id="untoggle">Toggle Notes</button>
 
 <%= render 'form', note: @note %>
 
-<%= link_to 'Show', @note %> |
-<%= link_to 'Back', notes_path %>
+<button><%= link_to 'Show', @note %></button>
+<br>
+<button><%= link_to 'Back', notes_path %></button>
+<br><br><br>

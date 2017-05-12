@@ -24,9 +24,9 @@
         <span id ="homeLink">
           <%= link_to "Home", root_path, class: "navlink" %>
         </span>
-          <span id="aboutLink">
+          <!-- <span id="aboutLink">
             <%= link_to "About/Contact Us", root_path, class: "navlink" %>
-          </span>
+          </span> -->
           <span id="signLink">
             <% if user_signed_in? %> Welcome <%= current_user.email %>!
           </span>
