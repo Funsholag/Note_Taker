@@ -73,38 +73,24 @@ span.NoteImage {
 {
     from { opacity: 0; } to { opacity: 0 }
 }
-@-webkit-keyframes hide
-{
-    from { opacity: 0; } to { opacity: 0 }
+@-webkit-keyframes hide{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 0
+  }
 }
-@-o-keyframes hide
-{
-    from { opacity: 0; } to { opacity: 0 }
+
+@-o-keyframes hide{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 0
+  }
 }
-@keyframes slideIn
-{
-      0% { opacity: 0; top: -100px; }
-      1% { opacity: 1; top: -100px; }
-    100% { opacity: 1; top:  200px; }
-}
-@-moz-keyframes slideIn
-{
-      0% { opacity: 0; top: -100px; }
-      1% { opacity: 1; top: -100px; }
-    100% { opacity: 1; top:  200px; }
-}
-@-webkit-keyframes slideIn
-{
-      0% { opacity: 0; top: -100px; }
-      1% { opacity: 1; top: -100px; }
-    100% { opacity: 1; top:  200px; }
-}
-@-o-keyframes slideIn
-{
-      0% { opacity: 0; top: -100px; }
-      1% { opacity: 1; top: -100px; }
-    100% { opacity: 1; top:  200px; }
-}
+
 #nav{
   background-color: black;
   opacity: .65;
@@ -160,6 +146,43 @@ video {
   transition: 600ms;
   filter: brightness(65%);
 }
+
+#polina button{
+  padding: .4rem;
+  border: none;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s background;
+  margin-left: 50%;
+  margin-top: 35%;
+  background-color: transparent;
+
+}
+
+#polina button:hover {
+   background: rgba(0,0,0,0.5);
+}
+
+#polina .Jaunst:hover{
+  background: rgba(0,0,0,0.5);
+}
+
+.Jaunst{
+  height: 45px;
+  width: 45px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+}
+
 footer{
   clear: both;
   position: fixed;
