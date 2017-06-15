@@ -1,14 +1,18 @@
-<h1 class= "Title focus-in-contract-bck">
-  NoteHub
+<div id="wrapper">
+  <h1 class= "Title focus-in-contract-bck">
+    NoteHub
+    <div class= "NoteImage rotate-90-vertical-fwd">
+      <!-- <i class="responsive-image material-icons" id="note">note</i> -->
+      <%= image_tag("1494560242_note.png", class: "img-fluid", id:'book') %>
+    </div>
+  </h1>
 
-</h1>
+</div>
 
 <h4 id="titleCaption">
   An online hub that allows students to create documents and a to-do list for organizing their thoughts.
 </h4>
-<span class= "NoteImage rotate-90-vertical-fwd">
-  <%=image_tag("1494560242_note.png", id:'book')%>
-</span>
+
 
   <!-- <video poster="homeVid.mp4" id="homeVid" preload="auto" playsinline autoplay muted loop>
     <source src="homeVid.mp4" type="video/mp4">
@@ -19,12 +23,12 @@
 
 
 
-<span id="polina">
-  <button onclick="pauseVid" id="pauseVid" type="button"> <%=image_tag("1494585147_PauseDisabled.png", class:'Jaunst')%>
+<div id="polina">
+  <button onclick="pauseVid" id="pauseVid" type="button"><i class="responsive-image material-icons">pause</i>
   </button>
 
 
-  <button onclick="playVid" id="playVid" type="button"> <%=image_tag("gtk_media_play_ltr.png", class:'Jaunst')%>
+  <button onclick="playVid" id="playVid" type="button"><i class="responsive-image material-icons">play_arrow</i>
   </button>
 
-</span>
+</div>

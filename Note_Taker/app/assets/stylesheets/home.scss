@@ -1,6 +1,7 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 body{
   background-color: black;
 }
@@ -12,7 +13,6 @@ body{
 }
 
 .Title{
-  text-align: justify;
   font-family: Above DEMO, serif;
   text-align: center;
   font-size: 65px;
@@ -21,16 +21,42 @@ body{
   -webkit-box-shadow: 121px 200px 83px -43px rgba(255,255,255,1);
   -moz-box-shadow: 121px 200px 83px -43px rgba(255,255,255,1);
   box-shadow: 121px 200px 83px -43px rgba(255,255,255,1);
-
-
 }
 .focus-in-contract-bck {
-	-webkit-animation: focus-in-contract-bck 1.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+  -webkit-animation: focus-in-contract-bck 1.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 	-moz-animation: focus-in-contract-bck 1.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 	animation: focus-in-contract-bck 1.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
 
-@-webkit-keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-contract-bck{0%{letter-spacing:1em;-webkit-transform:translateZ(300px);transform:translateZ(300px);-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-transform:translateZ(12px);transform:translateZ(12px);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes focus-in-contract-bck{0%{
+  letter-spacing:1em;
+  -webkit-transform:translateZ(300px);
+  transform:translateZ(300px);
+  -webkit-filter:blur(12px);
+  filter:blur(12px);
+  opacity:0}
+  100%{
+    -webkit-transform:translateZ(12px);
+    transform:translateZ(12px);
+    -webkit-filter:blur(0);
+    filter:blur(0);
+    opacity:1}
+  }
+  @keyframes focus-in-contract-bck{0%{
+    letter-spacing:1em;
+    -webkit-transform:translateZ(300px);
+    transform:translateZ(300px);
+    -webkit-filter:blur(12px);
+    filter:blur(12px);
+    opacity:0
+  }
+  100%{
+    -webkit-transform:translateZ(12px);
+    transform:translateZ(12px);
+    -webkit-filter:blur(0);filter:blur(0);
+    opacity:1
+  }
+}
 
 .swirl-in-fwd {
 	-webkit-animation: swirl-in-fwd 0.8s ease-out both;
@@ -38,41 +64,57 @@ body{
 	animation: swirl-in-fwd 0.8s ease-out both;
 }
 
-@-webkit-keyframes swirl-in-fwd{0%{-webkit-transform:rotate(-540deg) scale(0);transform:rotate(-540deg) scale(0);opacity:0}100%{-webkit-transform:rotate(0) scale(1);transform:rotate(0) scale(1);opacity:1}}@keyframes swirl-in-fwd{0%{-webkit-transform:rotate(-540deg) scale(0);transform:rotate(-540deg) scale(0);opacity:0}100%{-webkit-transform:rotate(0) scale(1);transform:rotate(0) scale(1);opacity:1}}
-
-span.NoteImage {
-    position: absolute;
-    top: 70px;
-    animation-name: hide, swirl-in-fwd;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-    -moz-animation: swirl-in-fwd 0.8s ease-out both;
-    -moz-animation-duration: 0.8s;
-    -moz-animation-timing-function: ease-out;
-    -moz-animation-iteration-count: 1;
-    -webkit-animation: swirl-in-fwd 0.8s ease-out both;
-    -webkit-animation-duration: 0.8s;
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-iteration-count: 1;
-    opacity: 1;
+@-webkit-keyframes swirl-in-fwd{0%{
+  -webkit-transform:rotate(-540deg) scale(0);
+  transform:rotate(-540deg) scale(0);
+  opacity:0
+}100%{
+  -webkit-transform:rotate(0) scale(1);
+  transform:rotate(0) scale(1);
+  opacity:1
 }
-span.NoteImage {
-  right: 420px;
+}
+@keyframes swirl-in-fwd{0%{
+  -webkit-transform:rotate(-540deg) scale(0);
+  transform:rotate(-540deg) scale(0);
+  opacity:0
+}
+100%{
+  -webkit-transform:rotate(0) scale(1);
+  transform:rotate(0) scale(1);
+  opacity:1
+}
+}
+.NoteImage {
+  opacity: 1;
+  animation-name: hide, swirl-in-fwd;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  -moz-animation: swirl-in-fwd 0.8s ease-out both;
+  -moz-animation-duration: 0.8s;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation: swirl-in-fwd 0.8s ease-out both;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: 1;
   animation-delay: 0.85s, 0.85s;
   -moz-animation-delay: 0.85s, 0.85s;
   -webkit-animation-delay: 0.85s, 0.85s;
-  // -o-animation-delay: 0.2s, 0.2s;
 }
 
-@keyframes hide
-{
-    from { opacity: 0; } to { opacity: 0 }
+#book{
+  width: 50px;
+  margin-top: -65px;
+  margin-left: 155px;
+  position: absolute;
 }
-@-moz-keyframes hide
-{
-    from { opacity: 0; } to { opacity: 0 }
-}
+
+@keyframes hide{from { opacity: 0;
+ } to { opacity: 0 }}
+@-moz-keyframes hide{from { opacity: 0;
+ } to { opacity: 0 }}
 @-webkit-keyframes hide{
   from{
     opacity: 0;
@@ -92,7 +134,7 @@ span.NoteImage {
 }
 
 #titleCaption {
-  margin-top: 40px;
+  margin-top: 50px;
   color: white;
   text-align: center;
   font-family: 'BioRhyme', serif;
@@ -105,9 +147,7 @@ span.NoteImage {
   font-family: 'BioRhyme', serif;
   line-height: 45px;
 }
-#book{
-  width: 50px;
-}
+
 #homeLink{
   color: red;
   text-decoration: none;
@@ -139,41 +179,46 @@ span.NoteImage {
   margin-left: 15px;
 }
 video {
-  position: fixed;
+  position: absolute;
   top: 100%;
   left: 50%;
   min-width: 100%;
-  min-height: 100%;
-  width: auto;
   height: auto;
   z-index: -100;
   transform: translateX(-50%) translateY(-100%);
-  background: url("homeVid.mp4");
+  // background: url("343465699.mp4");
   background-size: cover;
   transition: 600ms;
   filter: brightness(75%);
 }
 
+#pauseVideo{
+  // background-color:rgba(0, 0, 0, 0.5);
+  // background: rgba(255,255,255,0.23);
+}
 
-#polina{
-  border: none;
+#polina {
   // margin: 1rem auto;
-  background: rgba(255,255,255,0.23);
+  // background: rgba(255,255,255,0.23);
   cursor: pointer;
-  transition: .3s background;
+  // transition: .3s background;
   position: absolute;
   bottom: 30px;
-  margin-left: 50%;
+  margin-left: 45%;
+}
+#polina button{
+  border: none;
+  background-color: rgba(255,255,255,0.23);
 
 }
 
 #polina button:hover {
-   background: rgba(0,0,0,0.5);
+   background: rgba(255,255,255,0.3);
 }
 
 
 #polina1 button:hover {
-   background: rgba(0,0,0,0.5);
+   background: rgba(255,255,255,0.3);
 }
 
 .Jaunst{
@@ -192,27 +237,22 @@ footer{
   clear: both;
   position: fixed;
   bottom: -10px;
-  right: 0px;
+  left: 0px;
   padding-bottom: 16px;
   background: transparent;
-  // transform: translateY(-100%);
+  transform: translateY(-5%) translateX(-30%);
   height: 43px;
   z-index: auto;
+  text-align: left;
 }
 .footy{
-  // position: relative;
   overflow: hidden;
-  text-align: right;
 }
 .social{
   display: inline;
-  // text-decoration: none;
+  color: black;
 }
 
-#media{
-  width: 25px;
-  margin-right: 15px;
-}
 
 @media (min-width: 100px) {
 

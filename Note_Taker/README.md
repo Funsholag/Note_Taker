@@ -1,6 +1,4 @@
-# README
-
-This is an app intended for students.
+This app is intended for students.
 
 We designed a note taking application and a to do list application.
 +User Log In/Sign Up/Sign Out
