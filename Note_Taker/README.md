@@ -29,14 +29,14 @@ See it deployed at https://noteshub.herokuapp.com/
 
 
 <dl>
-<dt>Funsho</dt>
+<dt>Funsho</dt><dt>Jimmy</dt>
 <dd>Todolist</dd>
 <dd>HTML/CSS/JS</dd>
 <dd>Styling</dd>
 <dd>Models</dd>
 <dd>Mobile responsiveness</dd>
 
-<dt>Jimmy</dt>
+
 <dd>Notepad</dd>
 <dd>Search</dd>
 <dd>Backend</dd>
