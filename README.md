@@ -27,6 +27,7 @@ See it deployed at https://noteshub.herokuapp.com/
 <li>md_simple_editor</li>
 <li>font-awesome-rails</li>
 
+
 Funsho - Todolist, HTML/CSS/JS, Styling, Models, Mobile responsiveness
 
 Jimmy - Notepad, Search, Backend, Toggle button
