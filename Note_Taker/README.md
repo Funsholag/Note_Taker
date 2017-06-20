@@ -35,9 +35,7 @@ See it deployed at https://noteshub.herokuapp.com/
 <dd>Styling</dd>
 <dd>Models</dd>
 <dd>Mobile responsiveness</dd>
-</dl>
 
-<dl>
 <dt>Jimmy</dt>
 <dd>Notepad</dd>
 <dd>Search</dd>
