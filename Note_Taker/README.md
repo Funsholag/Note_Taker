@@ -29,16 +29,22 @@ See it deployed at https://noteshub.herokuapp.com/
 
 
 <dl>
-<dt>Funsho</dt><dt>Jimmy</dt>
+<dt>Funsho</dt>
 <dd>Todolist</dd>
 <dd>HTML/CSS/JS</dd>
 <dd>Styling</dd>
 <dd>Models</dd>
 <dd>Mobile responsiveness</dd>
 
-
+<dt>Jimmy</dt>
 <dd>Notepad</dd>
 <dd>Search</dd>
 <dd>Backend</dd>
 <dd>Toggle button</dd>
 </dl>
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
