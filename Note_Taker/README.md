@@ -37,4 +37,10 @@ See it deployed at https://noteshub.herokuapp.com/
 <dd>Mobile responsiveness</dd>
 </dl>
 
-Jimmy - Notepad, Search, Backend, Toggle button
+<dl>
+<dt>Jimmy</dt>
+<dd>Notepad</dd>
+<dd>Search</dd>
+<dd>Backend</dd>
+<dd>Toggle button</dd>
+</dl>
