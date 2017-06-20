@@ -28,6 +28,13 @@ See it deployed at https://noteshub.herokuapp.com/
 <li>font-awesome-rails</li>
 
 
-Funsho - Todolist, HTML/CSS/JS, Styling, Models, Mobile responsiveness
+<dl>
+<dt>Funsho</dt>
+<dd>Todolist</dd>
+<dd>HTML/CSS/JS</dd>
+<dd>Styling</dd>
+<dd>Models</dd>
+<dd>Mobile responsiveness</dd>
+</dl>
 
 Jimmy - Notepad, Search, Backend, Toggle button
