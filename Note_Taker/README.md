@@ -26,6 +26,7 @@ See it deployed at https://noteshub.herokuapp.com/
 <li>redcarpet</li>
 <li>md_simple_editor</li>
 <li>font-awesome-rails</li>
+<hr>
 
 
 | Funsho        | Jimmy         |
