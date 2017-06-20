@@ -43,8 +43,10 @@ See it deployed at https://noteshub.herokuapp.com/
 <dd>Toggle button</dd>
 </dl>
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Funsho        | Jimmy         |
+| ------------- |:-------------:|
+| Todolist      | Notepad       |
+| HTML/CSS/JS   | Search        |
+| Styling       | Backend       |
+| Models        | Toggle button |
+| Mobile responsiveness|        |
