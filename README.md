@@ -1,12 +1,31 @@
 # Note_Taker
 
-This is an app intended for students.
+*This is an app intended for students.*
 
-We designed a note taking application and a to do list application. +User Log In/Sign Up/Sign Out +Edit account(change Username, Email, and Password) +Search function +To do list +Word Documents +Mark down Editor +Preview
+We designed a note taking application and a to do list application.
 
-HTML/CSS Javascript Ruby on Rails
+Features:
+<li>User Log In/Sign Up/Sign Out</li>
+<li>Edit account(change Username, Email, and Password)</li>
+<li>Search function</li>
+<li>To do list</li>
+<li>Word Documents</li>
+<li>Mark down Editor</li>
+<li>Preview</li>
 
-Used the following gems: devise paperclip redcarpet md_simple_editor font-awesome-rails
+See it deployed at https://noteshub.herokuapp.com/
 
-Funsho - Todolist, html/css/js, styling, models, mobile responsiveness
-Jimmy - Notepad, search, backend, toggle button
+## Technologies used
+<li>HTML/CSS</li>
+<li>Javascript</li>
+<li>Ruby on Rails</li>
+
+<h2>Gems:</h2>
+<li>devise</li>
+<li>paperclip</li>
+<li>redcarpet</li>
+<li>md_simple_editor</li>
+<li>font-awesome-rails</li>
+
+Funsho - Todolist, HTML/CSS/JS, Styling, Models, Mobile responsiveness
+Jimmy - Notepad, Search, Backend, Toggle button
